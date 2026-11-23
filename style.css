@@ -9,15 +9,18 @@ body {
   padding: 40px 20px;
   background-color: #0d1117;
   color: #e6edf3;
+
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
+
   min-height: 100vh;
 
-  background-image: url("img/Summit11_bg.webp");
   background-image:
     linear-gradient(rgba(13, 17, 23, 0.85), rgba(13, 17, 23, 0.85)),
     url("img/Summit11_bg.webp");
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -53,12 +56,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
+  gap: 20px;
   padding: 40px;
 }
 
 .container-2 .title {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .container-2 .title h1 {
@@ -77,17 +80,29 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: stretch;
+  align-items: flex-start;
   gap: 40px;
   width: 100%;
 }
 
-.Mang0-playercard .Zain-playercard {
+.Mang0-playercard,
+.Zain-playercard {
   flex: 1 1 300px;
   max-width: 340px;
+  min-width: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+}
+
+.player-row img {
+  display: block;
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
 }
 
 .player-name {
@@ -97,4 +112,40 @@ body {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+
+
+.player-info {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-top: 12px;
+  max-width: 340px;
+  width: 100%;
+  text-align: left;
+}
+
+
+@media (max-width: 700px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .container-2 {
+    padding: 20px 0;
+  }
+
+  .player-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Mang0-playercard,
+  .Zain-playercard {
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .title h1 {
+    font-size: 1.8rem;
+  }
 }
