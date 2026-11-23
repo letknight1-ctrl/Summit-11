@@ -114,6 +114,11 @@ body {
   letter-spacing: 1px;
 }
 
+a {
+  color: #e6edf3;
+  text-decoration: none;
+}
+
 
 .player-info {
   font-size: 0.9rem;
