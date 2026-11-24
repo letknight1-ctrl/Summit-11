@@ -12,7 +12,7 @@ To view this website, simply click the link in the repository to enter the websi
 
 <h1><b>How was it made?</b></h1>
 
-It was made with HTML and CSS, plus images taken from google. HTML and CSS were used for structure and styling, while the images were use mainly as visual aid and for visitors to see what thee players looked like.
+It was made with HTML and CSS, plus images taken from google. HTML and CSS were used for structure and styling, while the images were use mainly as visual aid and for visitors to see what the players looked like. Additionally, the code editor that I used was VS Code, which helped with previewing the website through the use of the live server extension. 
 
 <h1><b>Some Challenges</b></h1>
 
